@@ -40,6 +40,7 @@ func NewResponseWriter(rw http.ResponseWriter) ResponseWriter {
 	return nrw
 }
 
+// 是ResponseWriter的实现，同时实现http.ResponseWriter
 type responseWriter struct {
 	http.ResponseWriter
 	status      int
